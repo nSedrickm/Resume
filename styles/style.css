@@ -4,6 +4,9 @@ html {
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
 }
+body {
+  margin: 0;
+}
 
 .header {
   height: 700px;
@@ -232,4 +235,142 @@ html {
 .certification-link:hover,
 .project-link:hover {
   color: #d55c47;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-items: center;
+  place-items: center;
+}
+.logo {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .profile-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .shapes-container {
+    top: 25%;
+    height: 150px;
+    width: 200px;
+  }
+  .orange-shape {
+    width: 150px;
+    height: 200px;
+  }
+  .grey-shape {
+    width: 150px;
+    height: 200px;
+    margin: -25px -80px;
+  }
+  .heading-container {
+    top: 5%;
+    left: 5%;
+    color: white;
+    z-index: 1;
+    margin: auto;
+  }
+
+  .heading-1 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .role {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+  }
+
+  .social-links-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-link {
+    display: flex;
+    justify-items: center;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .resume-container {
+    display: block;
+    padding: 40px;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .about-section,
+  .work-experience-section,
+  .education-section,
+  .projects-section,
+  .skills-section,
+  .awards-section,
+  .certifications-section,
+  .languages-section {
+    margin-bottom: 80px;
+  }
+
+  .resume-details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .resume-details .timeline {
+    display: flex;
+    justify-items: start;
+    align-items: start;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .resume-details .timeline i {
+    margin-right: 8px;
+  }
+
+  .resume-details .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .resume-details .description {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.8;
+  }
+
+  .resume-details .skill-list {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.8;
+  }
+
+  .sponsor-logos {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+  }
 }
